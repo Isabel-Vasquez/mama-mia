@@ -1,0 +1,168 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.home-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  background-color: #17a2b5;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  height: 75px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.pizza-card {
+  border: 1px solid rgba(92, 92, 92, 0.61);
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.pizza-detail {
+  display: flex;
+  gap: 30px;
+  height: 500px;
+  margin: 100px 50px 0px;
+}
+
+.container-button {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.container-button button {
+  width: 50%;
+}
+
+.pizza-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+.pizza-detail img {
+  width: 100%;
+  object-fit: cover;
+}
+.price-and-button {
+  display: flex;
+  justify-content: space-between;
+}
+.price-and-button p {
+  font-size: 30px;
+}
+
+.pizza-card h3,
+.pizza-card p,
+.pizza-detail h2,
+.pizza-detail p,
+.cart-item h3,
+.cart-item div {
+  margin: 10px 0;
+}
+
+.button,
+.añadir-carrito,
+.ver-mas,
+.price-and-button button {
+  display: inline-block;
+  background-color: #e63946;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.ver-mas {
+  background-color: #457b9d;
+}
+
+.home {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.home-background {
+  background-image: url('assets/img/bacgroundpizza.jpg');
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-home {
+  display: inline-block;
+  width: auto;
+}
+.container-cart {
+  background-color: #f8f9fb;
+  width: 78%;
+  height: max-content;
+  padding: 25px;
+  margin-top: 100px;
+  color: black;
+}
+
+.cart-item {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+}
+.cart-item {
+  margin-bottom: 0;
+}
+.cart-item h3 {
+  flex: 1;
+}
+.cart-item p {
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.cart-decrement,
+.cart-increment {
+  color: white;
+}
+
+.cart-increment {
+  background-color: #e63946;
+}
+
+.cart-decrement {
+  background-color: #457b9d;
+}
+
+.text-carrito {
+  font-size: 30px;
+}
